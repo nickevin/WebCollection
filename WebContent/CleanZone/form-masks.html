@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +9,18 @@
 <link rel="shortcut icon" href="images/favicon.png">
 
 <title>Clean Zone</title>
-
 <!-- Bootstrap core CSS -->
 <link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="js/jquery.gritter/css/jquery.gritter.css" />
+<link rel="stylesheet" type="text/css" href="js/bootstrap.switch/bootstrap-switch.css" />
+<link rel="stylesheet" type="text/css" href="js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
+<link rel="stylesheet" type="text/css" href="js/jquery.select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="js/bootstrap.slider/css/slider.css" />
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
 
 <link rel="stylesheet" href="fonts/font-awesome-4/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/pygments.css">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -21,12 +28,6 @@
 	  <script src="js/respond.min.js"></script>
 	<![endif]-->
 <link rel="stylesheet" type="text/css" href="js/jquery.nanoscroller/nanoscroller.css" />
-<link rel="stylesheet" type="text/css" href="js/jquery.easypiechart/jquery.easy-pie-chart.css" />
-<link rel="stylesheet" type="text/css" href="js/bootstrap.switch/bootstrap-switch.css" />
-<link rel="stylesheet" type="text/css" href="js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
-<link rel="stylesheet" type="text/css" href="js/jquery.select2/select2.css" />
-<link rel="stylesheet" type="text/css" href="js/bootstrap.slider/css/slider.css" />
-<link href="css/style.css" rel="stylesheet" />
 
 </head>
 
@@ -176,7 +177,7 @@
 							<li><a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a>
 								<ul class="sub-menu">
 									<li><a href="index.html">Version 1</a></li>
-									<li><a href="index2.html"><span class="label label-primary pull-right">New</span> Version 2</a></li>
+									<li><a href="dashboard2.html"><span class="label label-primary pull-right">New</span> Version 2</a></li>
 								</ul></li>
 							<li><a href="#"><i class="fa fa-smile-o"></i><span>UI Elements</span></a>
 								<ul class="sub-menu">
@@ -195,7 +196,7 @@
 									<li><a href="form-elements.html">Components</a></li>
 									<li><a href="form-validation.html">Validation</a></li>
 									<li><a href="form-wizard.html">Wizard</a></li>
-									<li><a href="form-masks.html">Input Masks</a></li>
+									<li class="active"><a href="form-masks.html">Input Masks</a></li>
 									<li><a href="form-multiselect.html"><span class="label label-primary pull-right">New</span>Multi Select</a></li>
 									<li><a href="form-wysiwyg.html"><span class="label label-primary pull-right">New</span>WYSIWYG Editor</a></li>
 									<li><a href="form-upload.html"><span class="label label-primary pull-right">New</span>Multi Upload</a></li>
@@ -220,20 +221,20 @@
 							<li><a href="charts.html"><i class="fa fa-bar-chart-o"></i><span>Charts</span></a></li>
 							<li><a href="#"><i class="fa fa-file"></i><span>Pages</span></a>
 								<ul class="sub-menu">
-									<li class="active"><a href="blank.html">Blank Page</a></li>
-									<li><a href="blank-header.html">Blank Page Header</a></li>
-									<li><a href="blank-aside.html">Blank Page Aside</a></li>
-									<li><a href="login.html">Login</a></li>
-									<li><a href="404.html">404 Page</a></li>
-									<li><a href="500.html">500 Page</a></li>
-									<li><a href="sign-up.html"><span class="label label-primary pull-right">New</span>Sign Up</a></li>
-									<li><a href="forgot-password.html"><span class="label label-primary pull-right">New</span>Forgot Password</a></li>
-									<li><a href="profile.html"><span class="label label-primary pull-right">New</span>Profile</a></li>
-									<li><a href="search.html"><span class="label label-primary pull-right">New</span>Search</a></li>
-									<li><a href="calendar.html"><span class="label label-primary pull-right">New</span>Calendar</a></li>
-									<li><a href="code-editor.html"><span class="label label-primary pull-right">New</span>Code Editor</a></li>
-									<li><a href="gallery.html">Gallery</a></li>
-									<li><a href="timeline.html">Timeline</a></li>
+									<li><a href="pages-blank.html">Blank Page</a></li>
+									<li><a href="pages-blank-header.html">Blank Page Header</a></li>
+									<li><a href="pages-blank-aside.html">Blank Page Aside</a></li>
+									<li><a href="pages-login.html">Login</a></li>
+									<li><a href="pages-404.html">404 Page</a></li>
+									<li><a href="pages-500.html">500 Page</a></li>
+									<li><a href="pages-sign-up.html"><span class="label label-primary pull-right">New</span>Sign Up</a></li>
+									<li><a href="pages-forgot-password.html"><span class="label label-primary pull-right">New</span>Forgot Password</a></li>
+									<li><a href="pages-profile.html"><span class="label label-primary pull-right">New</span>Profile</a></li>
+									<li><a href="pages-search.html"><span class="label label-primary pull-right">New</span>Search</a></li>
+									<li><a href="pages-calendar.html"><span class="label label-primary pull-right">New</span>Calendar</a></li>
+									<li><a href="pages-code-editor.html"><span class="label label-primary pull-right">New</span>Code Editor</a></li>
+									<li><a href="pages-gallery.html">Gallery</a></li>
+									<li><a href="pages-timeline.html">Timeline</a></li>
 								</ul></li>
 						</ul>
 					</div>
@@ -248,43 +249,112 @@
 		</div>
 
 		<div class="container-fluid" id="pcont">
-
-			<div class="cl-mcont">
-				<h3 class="text-center">Content goes here!</h3>
+			<div class="page-head">
+				<h2>Input Masks</h2>
+				<ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Form</a></li>
+					<li class="active">Masks</li>
+				</ol>
 			</div>
+			<div class="cl-mcont">
+				<div class="row">
+					<div class="col-md-12">
 
+						<div class="block-flat">
+							<div class="header">
+								<h3>Masks Types</h3>
+							</div>
+							<div class="content">
+								<form class="form-horizontal group-border-dashed" action="#" novalidate>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Date</label>
+										<div class="col-sm-6">
+											<input type="text" data-mask="date" class="form-control" placeholder="DD/MM/YYYY" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Phone</label>
+										<div class="col-sm-6">
+											<input type="text" data-mask="phone" class="form-control" placeholder="(999) 999-9999" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Phone + Opcional Ext.</label>
+										<div class="col-sm-6">
+											<input type="text" data-mask="phone-ext" class="form-control" placeholder="(999) 999-9999? x99999" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Int Phone</label>
+										<div class="col-sm-6">
+											<input type="text" data-mask="phone-int" class="form-control" placeholder="+33 999 999 999" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Tax Id</label>
+										<div class="col-sm-6">
+											<input type="text" data-mask="taxid" class="form-control" placeholder="99-9999999" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">SSN</label>
+										<div class="col-sm-6">
+											<input type="text" data-mask="ssn" class="form-control" placeholder="999-99-9999" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Product Key</label>
+										<div class="col-sm-6">
+											<input type="text" data-mask="product-key" class="form-control" placeholder="a*-999-a999" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Percent</label>
+										<div class="col-sm-6">
+											<input type="text" data-mask="percent" class="form-control" placeholder="99%" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Currency</label>
+										<div class="col-sm-6">
+											<input type="text" data-mask="currency" class="form-control text-right" placeholder="$0" />
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
 		</div>
-
 	</div>
 
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.select2/select2.min.js" type="text/javascript"></script>
+	<script src="js/jquery.parsley/dist/parsley.js" type="text/javascript"></script>
+	<script src="js/bootstrap.slider/js/bootstrap-slider.js" type="text/javascript"></script>
+	<script src="js/jquery.maskedinput/jquery.maskedinput.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
-	<script type="text/javascript" src="js/jquery.sparkline/jquery.sparkline.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easypiechart/jquery.easy-pie-chart.js"></script>
-	<script src="js/jquery.ui/jquery-ui.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/jquery.nestable/jquery.nestable.js"></script>
+	<script type="text/javascript" src="js/behaviour/general.js"></script>
+	<script src="js/jquery.ui/jquery-ui.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/bootstrap.switch/bootstrap-switch.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-	<script src="js/jquery.select2/select2.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.slider/js/bootstrap-slider.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/jquery.gritter/js/jquery.gritter.js"></script>
-	<script type="text/javascript" src="js/behaviour/general.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
 			//initialize the javascript
 			App.init();
+			App.masks();
 		});
 	</script>
-
 	<!-- Bootstrap core JavaScript
-================================================== -->
+    ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/behaviour/voice-commands.js"></script>
 	<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.flot/jquery.flot.js"></script>
-	<script type="text/javascript" src="js/jquery.flot/jquery.flot.pie.js"></script>
-	<script type="text/javascript" src="js/jquery.flot/jquery.flot.resize.js"></script>
-	<script type="text/javascript" src="js/jquery.flot/jquery.flot.labels.js"></script>
 </body>
 </html>
