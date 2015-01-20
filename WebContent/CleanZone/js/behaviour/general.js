@@ -17,11 +17,6 @@ var App = function () {
   
   /*DASHBOARD*/
   var dashboard = function(){
-    var skycons = new Skycons({"color": "#FFFFFF"});
-    skycons.add($("#sun-icon")[0], Skycons.PARTLY_CLOUDY_DAY);
-    skycons.play();
-
-  
     /*Sparklines*/
     $(".spk1").sparkline([2,4,3,6,7,5,8,9,4,2,6,8,8,9,10], { type: 'bar', width: '80px', barColor: '#4A8CF7'});
     $(".spk2").sparkline([4,6,7,7,4,3,2,1,4,4 ,5,6,5], { type: 'discrete', width: '80', lineColor: '#4A8CF7',thresholdValue: 4,thresholdColor: '#ff0000'});
@@ -36,6 +31,10 @@ var App = function () {
     maxSpotColor: false,  
     highlightSpotColor: '#1e7ac6',
     highlightLineColor: '#1e7ac6'});
+    
+    var skycons = new Skycons({"color": "#FFFFFF"});
+    skycons.add($("#sun-icon")[0], Skycons.PARTLY_CLOUDY_DAY);
+    skycons.play();
 
     /*Dashboard Charts*/
     if (!jQuery.plot) {
