@@ -14,7 +14,7 @@
 <link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="js/jquery.gritter/css/jquery.gritter.css" />
 
-<link rel="stylesheet" href="fonts/font-awesome-4/css/font-awesome.min.css">
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -497,7 +497,7 @@
 											</div>
 											<div class="modal-body">
 												<div class="text-center crop-image"></div>
-												<form action="crop.php" method="post" onsubmit="return checkCoords();">
+												<form action="crop.html" method="post" onsubmit="return checkCoords();">
 													<input type="hidden" id="x" name="x" /> <input type="hidden" id="y" name="y" /> <input type="hidden" id="w" name="w" /> <input
 														type="hidden" id="h" name="h" />
 												</form>
@@ -650,7 +650,7 @@
 							//Profile Image Upload
 							'use strict';
 							// Change this to the location of your server-side upload handler:
-							var url = 'js/jquery.upload/server/php/';
+							var url = 'js/jquery.upload/server/html/';
 							var jcrop;
 							var timg;
 
@@ -670,7 +670,7 @@
 																		$(
 																				".crop-image")
 																				.html(
-																						'<img src="js/jquery.upload/server/php/files/' + file.name + '" />');
+																						'<img src="js/jquery.upload/server/html/files/' + file.name + '" />');
 																		$(
 																				'#progress')
 																				.fadeOut();
@@ -713,7 +713,7 @@
 												if (c.w != 0) {
 													$(".profile-avatar").attr(
 															"src",
-															'js/jquery.upload/server/php/files/crop.php?src='
+															'js/jquery.upload/server/html/files/crop.html?src='
 																	+ timg
 																	+ '&x='
 																	+ c.x

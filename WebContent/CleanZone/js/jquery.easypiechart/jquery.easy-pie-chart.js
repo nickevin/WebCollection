@@ -2,8 +2,8 @@
 /*
 Easy pie chart is a jquery plugin to display simple animated pie charts for only one value
 
-Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
-and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.html)
+and GPL (http://www.opensource.org/licenses/gpl-license.html) licenses.
 
 Built on top of the jQuery library (http://jquery.com)
 

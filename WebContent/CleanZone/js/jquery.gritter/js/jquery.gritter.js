@@ -364,7 +364,7 @@
 		},
 		
 		/**
-		* An extremely handy PHP function ported to JS, works well for templating
+		* An extremely handy html function ported to JS, works well for templating
 		* @private
 		* @param {String/Array} search A list of things to search for
 		* @param {String/Array} replace A list of things to replace the searches with
