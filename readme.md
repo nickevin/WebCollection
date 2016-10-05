@@ -2,4 +2,4 @@
 - [ma](http://byrushan.com/projects/ma/1-6-1/jquery/light/)
 - [CleanZone](http://foxythemes.net/cleanzone/)
 - [Material](https://github.com/Daemonite/material)
-- [limitless](http://demo.interface.club/limitless/layout_1/LTR/default/index.html)
+- [limitless](http://demo.interface.club/limitless)
