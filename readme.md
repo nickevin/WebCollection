@@ -1,5 +1,5 @@
-- [complete-admin](http://jaybabani.com/complete-admin/ui-typography.html)
-- [ma](http://byrushan.com/projects/ma/1-6-1/jquery/light/)
+- [complete-admin](https://wrapbootstrap.com/theme/complete-admin-.net-angular-html-WB0K88500)
+- [ma](https://wrapbootstrap.com/theme/material-admin-responsive-angularjs-WB011H985)
 - [CleanZone](http://foxythemes.net/cleanzone/)
 - [Material](https://github.com/Daemonite/material)
 - [limitless](http://demo.interface.club/limitless)
